@@ -1,0 +1,16 @@
+PODS:
+  - Sugar (5.0.0)
+
+DEPENDENCIES:
+  - Sugar (from `../../`)
+
+EXTERNAL SOURCES:
+  Sugar:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  Sugar: 80dd0ecebb5d118bb3f6f82205e8028b85208727
+
+PODFILE CHECKSUM: 836b85b5ba71d00beb003cea587ce793179b37b8
+
+COCOAPODS: 1.7.5

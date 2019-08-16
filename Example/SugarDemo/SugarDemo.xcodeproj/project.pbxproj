@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		466953207121AF0FAFACC934 /* Pods_SugarDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29391B58E12C265C3DB77792 /* Pods_SugarDemo.framework */; };
 		C76168A32307158F00124621 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76168A22307158F00124621 /* AppDelegate.swift */; };
 		C76168A52307158F00124621 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76168A42307158F00124621 /* ViewController.swift */; };
 		C76168A82307158F00124621 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76168A62307158F00124621 /* Main.storyboard */; };
@@ -34,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E911046B9806F5DA55A3A3B /* Pods-SugarDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SugarDemo.release.xcconfig"; path = "Target Support Files/Pods-SugarDemo/Pods-SugarDemo.release.xcconfig"; sourceTree = "<group>"; };
+		29391B58E12C265C3DB77792 /* Pods_SugarDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SugarDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AEF7F9DFC444F5B89C1B4D8 /* Pods-SugarDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SugarDemo.debug.xcconfig"; path = "Target Support Files/Pods-SugarDemo/Pods-SugarDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		C761689F2307158F00124621 /* SugarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SugarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76168A22307158F00124621 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C76168A42307158F00124621 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				466953207121AF0FAFACC934 /* Pods_SugarDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E5C219740DF9E6CD8BFC5EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AEF7F9DFC444F5B89C1B4D8 /* Pods-SugarDemo.debug.xcconfig */,
+				0E911046B9806F5DA55A3A3B /* Pods-SugarDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8991D200D711780941C8842C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29391B58E12C265C3DB77792 /* Pods_SugarDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C76168962307158F00124621 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +104,8 @@
 				C76168B62307159000124621 /* SugarDemoTests */,
 				C76168C12307159000124621 /* SugarDemoUITests */,
 				C76168A02307158F00124621 /* Products */,
+				2E5C219740DF9E6CD8BFC5EA /* Pods */,
+				8991D200D711780941C8842C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C76168C72307159000124621 /* Build configuration list for PBXNativeTarget "SugarDemo" */;
 			buildPhases = (
+				F21FE5D0913547103CE0F580 /* [CP] Check Pods Manifest.lock */,
 				C761689B2307158F00124621 /* Sources */,
 				C761689C2307158F00124621 /* Frameworks */,
 				C761689D2307158F00124621 /* Resources */,
+				8E8661D0450E190DC29585FC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +277,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8E8661D0450E190DC29585FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SugarDemo/Pods-SugarDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SugarDemo/Pods-SugarDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SugarDemo/Pods-SugarDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F21FE5D0913547103CE0F580 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SugarDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C761689B2307158F00124621 /* Sources */ = {
@@ -430,6 +499,7 @@
 		};
 		C76168C82307159000124621 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AEF7F9DFC444F5B89C1B4D8 /* Pods-SugarDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +517,7 @@
 		};
 		C76168C92307159000124621 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E911046B9806F5DA55A3A3B /* Pods-SugarDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
